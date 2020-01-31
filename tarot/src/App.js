@@ -6,9 +6,9 @@ import { Route } from "react-router-dom";
 import "./App.css";
 
 //Components//
-import Home from "./Components/Views/home";
-import Card from "./Components/Views/cardView";
-import { Header } from "./Components/Global/Header";
+import Home from "./components/Views/home";
+import Card from "./components/Views/cardView";
+import { Header } from "./components/Global/Header";
 
 function App(props) {
 
@@ -22,7 +22,7 @@ function App(props) {
             </div> 
 
             <Route exact path="/" component={Home} /> 
-            <Route exact path="/card" component={Card} />
+            <Route path="/card" component={Card} />
                
           </div>
 
